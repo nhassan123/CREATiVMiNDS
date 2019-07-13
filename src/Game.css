@@ -1,0 +1,20 @@
+.Board { 
+    position: relative;
+    margin: 0 auto;
+    background-color: #000;
+    background-image: url(./assets/sprites/bg.png);
+}
+
+.Cell{
+    background: #ccc;
+    position: absolute;
+}
+
+.controls{
+    margin-top: 20px;
+}
+
+.button{
+    margin-left: 12px;
+    cursor: pointer;
+}
