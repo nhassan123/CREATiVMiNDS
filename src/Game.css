@@ -5,6 +5,14 @@
     background-image: url(./assets/sprites/bg.png);
 }
 
+.tower{
+    position:relative;
+    margin: 20px auto;
+    background-image: url(./assets/towerRoom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .Cell{
     background: #ccc;
     position: absolute;
