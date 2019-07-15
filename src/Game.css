@@ -13,6 +13,24 @@
     background-repeat: no-repeat;
 }
 
+.Diego{
+    background-image: url(./assets/sprites/Diego.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 450px;
+    left: 190px;
+
+}
+
+.Diego{
+    background-image: url(./assets/sprites/bird.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 450px;
+    left: 490px;
+
+}
+
 .Cell{
     background: #ccc;
     position: absolute;

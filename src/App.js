@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import Animation from './components/animation';
 import Game from './Game';
+import Diego from './Diego';
+import Tess from './Tess';
 
 class App extends Component {
   render() {
@@ -43,7 +45,7 @@ const LoginPage = () => {
   const TeamGame = () =>{
     return(
       <div>
-        <Animation/>
+          <Game/>
       </div>
     )
   }
