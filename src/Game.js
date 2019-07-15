@@ -4,7 +4,7 @@ import styled from "styled-components";
 import './Game.css';
 import Player from './player';
 import Diego from './Diego';
-import Tess from './Tess';
+import sound from './assets/knd.mp3';
 
 const CELL_SIZE = 20;
 const WIDTH = 1200;
@@ -24,7 +24,8 @@ class Game extends React.Component {
                 <Container>
                     <Player/>
                     <Diego/>
-                </Container>    
+                </Container>   
+                <audio src={sound} id="my_audio" loop="loop" controls></audio>
 
                   
                 

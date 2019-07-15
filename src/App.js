@@ -6,7 +6,7 @@ import './App.css';
 import Animation from './components/animation';
 import Game from './Game';
 import Diego from './Diego';
-import Tess from './Tess';
+
 
 class App extends Component {
   render() {
