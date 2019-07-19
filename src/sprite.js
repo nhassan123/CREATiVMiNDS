@@ -27,7 +27,7 @@ export default class Sprite extends React.Component{
         const {state} = this.state;
         const { framesPerStep, states} = this.props;
 
-        if(this.tick == framesPerStep){
+        if(this.tick === framesPerStep){
             this.tick = 0;
             this.setState({
                 state: (state +1) % states

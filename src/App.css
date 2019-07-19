@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.app__main {
+  padding: 25px 50px 25px 50px;
+}
+
+body{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+ }
+
 .App {
   text-align: center;
+  
 }
 
 h1{
@@ -11,9 +24,11 @@ h1{
 }
 
 .App-header {
-  background-color:black;
-  height: 110px;
-  padding: 20px;
+  background-color: #623F96;
+  height: 90px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  padding: 5px;
   color: white;
 }
 
@@ -27,8 +42,9 @@ h1{
 }
 
 .Login{
-  color: black;
+  color:black;
   margin-top: 15%;
+  height:500px;
 }
 
 button{

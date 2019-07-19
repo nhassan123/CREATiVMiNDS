@@ -6,6 +6,9 @@ import './App.css';
 import Animation from './components/animation';
 import Game from './Game';
 import Diego from './Diego';
+import MiniGame from './miniGame';
+import SideBar from './Sidebar';
+import InvitePage from './invitePage';
 
 
 class App extends Component {
@@ -13,11 +16,14 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>CREATiV MiNDS</h1>
+          <b>CREATiV MiNDS</b>
         </div>
-          <Router>
-             <Route exact path="/" component={gamePage}/>
+             <Router>
+             <Route exact path="/" component={LoginPage}/>
+             <Route path="/dashboard" component={dashBoard}/>
              <Route path="/teamGame" component={TeamGame}/>
+             <Route path="/hockeyGame" component={miGame}/>
+             <Route path="/invitePage" component={InvitePage}/>
            </Router>
         
        </div>
@@ -31,12 +37,18 @@ const gamePage = () => {
   );
 }
 
+const dashBoard = () => {
+  return(
+    <SideBar/>
+  );
+}
+
 const LoginPage = () => {
   return(
     <div class="Login">
         USERNAME<br/> <input type="text"></input> <br/>
         PASSWORD<br/> <input type="text"></input> <br/>
-        <a href="/teamGame"><button>LOGIN</button></a>
+        <a href="/dashboard"><button>LOGIN</button></a>
         
    
   </div> );
@@ -50,5 +62,11 @@ const LoginPage = () => {
     )
   }
 
+  const miGame = () =>{
+    return(
+      <div>HLEOELO
+        <MiniGame></MiniGame></div>
+    );
+  }
 
 export default App;
