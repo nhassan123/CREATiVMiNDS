@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-.app__main {
-  padding: 25px 50px 25px 50px;
-}
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
 
 body{
+  margin-top: 120px;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-color: white;
+  background-color: #1ABCD4;
  }
 
 .App {
   text-align: center;
-  
+  margin: 0 0 0 0;
 }
 
 h1{
@@ -26,10 +25,10 @@ h1{
 .App-header {
   background-color: #623F96;
   height: 90px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 70px;
-  padding: 5px;
-  color: white;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 50px;
+  color: #F4D911;
+  text-align: left;
 }
 
 .App-intro {
@@ -45,11 +44,15 @@ h1{
   color:black;
   margin-top: 15%;
   height:500px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #F4D911;
+  font-size: 20px;
 }
 
 button{
-  background: black;
-  color: white;
+  background: #623F96;
+  color: #F4D911;
+  font-family: 'Shadows Into Light', cursive;
   padding: 15px;
   margin: 10px;
   font-size: 22px;

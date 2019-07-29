@@ -3,29 +3,53 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 
 
 import './App.css';
+import Logo from './tempLogo.png';
 import Animation from './components/animation';
 import Game from './Game';
 import Diego from './Diego';
 import MiniGame from './miniGame';
 import SideBar from './Sidebar';
 import InvitePage from './invitePage';
+import Test from './test';
+
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
 
 
 class App extends Component {
+
+  state = {
+    show:false
+  };
+
+  showModal = e => {
+    this.setState({
+      show: !this.state.show
+    });
+  };
   render() {
     return (
       <div className="App">
+       
+        <AppBar>
         <div className="App-header">
-          <b>CREATiV MiNDS</b>
-        </div>
+          <a href="/"><img src={Logo} height="80px"></img></a> <b>CREATiV MiNDS</b>
+          </div>
+        
+        
+        </AppBar>
+        <div id="body">
              <Router>
              <Route exact path="/" component={LoginPage}/>
              <Route path="/dashboard" component={dashBoard}/>
              <Route path="/teamGame" component={TeamGame}/>
              <Route path="/hockeyGame" component={miGame}/>
              <Route path="/invitePage" component={InvitePage}/>
+             <Route path="/modal" component={Test}/>
            </Router>
-        
+           </div>  
        </div>
     );
   }
@@ -46,8 +70,8 @@ const dashBoard = () => {
 const LoginPage = () => {
   return(
     <div class="Login">
-        USERNAME<br/> <input type="text"></input> <br/>
-        PASSWORD<br/> <input type="text"></input> <br/>
+        <b>USERNAME</b><br/> <input type="text"></input> <br/>
+        <b>PASSWORD</b><br/> <input type="text"></input> <br/>
         <a href="/dashboard"><button>LOGIN</button></a>
         
    
