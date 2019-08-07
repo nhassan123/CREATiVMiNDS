@@ -18,6 +18,8 @@ import TeamBoard from './components/teamBoards/board';
 import Collab from './Collab';
 import BoardTwo from './components/teamBoards/boardTwo';
 import Profile from './profile';
+import Polaroids from './components/polaroids/index';
+import Report from './report';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -62,6 +64,7 @@ class App extends Component {
              <Route path="/modal" component={Test}/>
              <Route path="/endgame" component={GameEnd} />
              <Route path="/profile" component={Profile} />
+             <Route path="/report" component={Report} />
            </Router>
            </div>  
        </div>
@@ -83,12 +86,15 @@ const dashBoard = () => {
 
 const LoginPage = () => {
   return(
-    <div class="Login">
-        <b>USERNAME</b><br/> <input type="text" value="DiegoS"></input> <br/>
-        <b>PASSWORD</b><br/> <input type="text" value="*******"></input> <br/>
-        <a href="/dashboard"><button>LOGIN</button></a>
+    <div>
+      <center><Polaroids/></center>
+      <div className="Login">
+          <b>USERNAME</b><br/> <input type="text" value="DiegoS"></input> <br/>
+          <b>PASSWORD</b><br/> <input type="text" value="*******"></input> <br/>
+          <a href="/profile"><button>LOGIN</button></a>
+          </div> 
+          <a href="">Create a new account</a>
         
-   
   </div> );
   }
 

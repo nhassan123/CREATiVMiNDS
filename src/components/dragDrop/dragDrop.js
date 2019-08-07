@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 import './style.css';
 
 import Wheel from './wheel.svg';
+import Rope from './rope.svg';
+import Box from './box.png';
+import Motor from './motor.png';
 
 export default class ToDoDragDropDemo extends Component {
     state = {
         objects: [
-          {id: "1", item:"wheel", source: Wheel, type:"inDash", assignedTo:"Diego", seen:true},
-          {id: "2", item:"rope", source: Wheel, type:"inDash", assignedTo:"Tess",  seen:false},
-          {id: "3", item:"weight", source: Wheel, type:"inDash", assignedTo:"Harry",  seen:false},
-          {id: "4", item:"motor", source: Wheel, type:"inDash", assignedTo:"Ann",  seen:false}
+          {id: "1", item:"WHEEL", source: Wheel, type:"inDash", assignedTo:"Diego", seen:true},
+          {id: "2", item:"ROPE", source: Rope, type:"inDash", assignedTo:"Tess",  seen:false},
+          {id: "3", item:"BOX", source: Box, type:"inDash", assignedTo:"Harry",  seen:false},
+          {id: "4", item:"MOTOR", source: Motor, type:"inDash", assignedTo:"Ann",  seen:false}
         ],
         player: 'Diego',
-        text: 'Move your clue into the black box to share with your friends!',
+        text: 'Move your clue into the white box to share with your friends!',
         visible: false,
     }
 
@@ -86,13 +89,13 @@ export default class ToDoDragDropDemo extends Component {
             <div className="inProgress"
 	    		onDragOver={(event)=>this.onDragOver(event)}
       			onDrop={(event)=>{this.onDrop(event, "onDisplay")}}>
-	          <div className="group-header">On Display</div>
+	          <div className="group-header"></div>
 	          {tasks.onDisplay}
 	        </div>
 	        <div className="droppable"
 	        	onDragOver={(event)=>this.onDragOver(event)}
           		onDrop={(event)=>this.onDrop(event, "inDash")}>
-	          <div className="group-header">From your Bag</div>
+	          <div className="group-header"></div>
 	          {tasks.inDash}
 	        </div>	      
             <button onClick={this.addClues} id={this.state.visible?'hidden':''}>Share</button>

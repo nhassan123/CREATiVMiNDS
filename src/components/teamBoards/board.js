@@ -4,9 +4,18 @@ import './board.css';
 import FlipCard from './flipcards/flipcard';
 import { Button } from '@material-ui/core';
 
+import Elevator from './elevator.png';
+import Escalator from './escalator.png';
+import Ladder from './ladder.png';
+import Stairs from './stairs.png';
+
 const options = ['Elevator', 'Ladder', 'Car', 'Paper', 'Laptop', 'Chair', 'Escalator', 'Phone', 'Stairs', 'Bus'];
 const answers = {'Elevator':true, 'Ladder':true, 'Escalator':true, 'Stairs':true, 'Car':false, 'Paper':false, 'Laptop':false, 'Chair':false, 'Phone': false, 'Bus':false};
 const rightAns = ['Elevator', 'Ladder', 'Escalator', 'Stairs'];
+const rightAnsToo = [{id:1, item:"Elevator", back: Elevator},
+                    {id:2, item:"Ladder", back: Ladder},
+                    {id:3, item:"Escalator", back: Escalator},
+                    {id:4, item:"Stairs", back: Stairs} ]
 
 
 class PlayerBoard extends React.Component{
@@ -50,7 +59,7 @@ class PlayerBoard extends React.Component{
     
     render(){
 
-        const cards = rightAns.map((right)=><FlipCard front={right} backDisplay={right} reveal={this.state.selected[right]}>  </FlipCard>);
+        const cards = rightAnsToo.map((right)=><FlipCard front={right.item} backDisplay={right.back} reveal={this.state.selected[right.item]}>  </FlipCard>);
         return(
         <div>
         <div className="board">

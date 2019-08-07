@@ -2,6 +2,7 @@ import React from 'react';
 import AccountCircle from '@material-ui/icons/PersonAdd';
 import Games from '@material-ui/icons/VideogameAsset';
 import Report from '@material-ui/icons/Star';
+import Account from '@material-ui/icons/AccountCircle';
 
 
 
@@ -20,7 +21,7 @@ class SideBar extends React.Component{
             <Report/> &nbsp; Progress
             </a>
             <a className="menu-item" href="/profile">
-            <Report/> &nbsp; Profile
+            <Account/> &nbsp; Profile
             </a>
             </div>
         );

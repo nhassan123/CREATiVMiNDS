@@ -35,8 +35,8 @@
 .teamItems {
     width: 1200px;
     height: 200px;
-    background-color: black;
-    border: white solid 10px;
+    background-color: white;
+    border: black solid 10px;
     border-radius: 15px;
     margin: auto;
 }

@@ -13,7 +13,7 @@ class FlipCard extends React.Component{
     render(){
 
         const frontDisplay = <p> </p>
-        const backDisplay = <p>{this.props.backDisplay}</p>
+        const backDisplay = <p><img src={this.props.backDisplay} width="190px"/></p>
 
         return(
             <div className="flip-card">

@@ -11,7 +11,15 @@ import './Game.css';
 
 class UserProfile extends React.Component{
     
+    
     render(){
+
+        const divStyle = {
+            position: 'absolute',
+            top: '140px',
+            right: '20px' 
+        };
+
         return(
             <div>
                 <SideBar/>
@@ -22,10 +30,10 @@ class UserProfile extends React.Component{
                         <h4>Learning Styles</h4>
 
                         Kinesthetic
-                        <div className="dt"><span className="dd"> </span></div>
+                        <div className="dt"><span className="db"> </span></div>
 
                         Auditory
-                        <div className="dt"><span className="db"> </span></div>
+                        <div className="dt"><span className="dd"> </span></div>
 
 
                         Visual
@@ -41,7 +49,7 @@ class UserProfile extends React.Component{
                     </div>    
          </div>
                     
-                    <button>Edit</button>
+                    <button style={divStyle}>Edit</button>
                 </span>
             </div>
         );

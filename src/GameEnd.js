@@ -11,6 +11,7 @@ import MiniGame from './miniGame';
 import Typer from './components/typer/Typer';
 import Music from './components/music/index';
 import Modal from './components/modal/modal';
+import wheel from './assets/wheel.svg';
 
 const CELL_SIZE = 20;
 const WIDTH = 1200;
@@ -46,12 +47,18 @@ class Game extends React.Component {
      this.setState({
        showResponse:false,
        exit: true,
-       dialogue:["I want you to take this wheel with a curved edge.", "It will help you and your friends get out of the tower."]
+       dialogue:["I want you to take this wheel with a grooved edge.", "It will help you and your friends get out of the tower."]
      });
    }
 
    
     render() {
+      const divStyle ={
+        position: 'absolute',
+        bottom: '100px',
+        left: '300px'
+      }
+
        return (
            <div>
             <div className="tower" style={{width: WIDTH, height:HEIGHT}}>
@@ -62,6 +69,7 @@ class Game extends React.Component {
             </Container>               
                  <span id="wheelbarrow"/>
                  <span id="pulley" />
+                 <div className={this.state.exit?'':'hidden'}> <img src={wheel} width="150px" style={divStyle} /></div>
             </div>
             <Typer dataText={this.state.dialogue}/>
             <button className={this.state.showResponse?'':'hidden'} onClick={this.response}>Happy to help!</button>
