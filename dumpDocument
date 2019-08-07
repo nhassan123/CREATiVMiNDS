@@ -1,0 +1,135 @@
+
+
+this.state={
+  text: '',
+  currString: 0,
+  typingSpeed: 150
+}
+
+handleType = () => {
+  const{dataText} = this.props;
+  const{text, currString, typingSpeed} = this.state;
+  const fullText = dataText[currString]
+
+  this.setState{
+    text:fullText.substring(0, text.length +1)
+  }
+
+  if(text == fullText){
+     if(currString != len(dataText){
+         this.setState({currString: currString + 1, text: ''})
+
+ 
+setTimeout(this.handleType, typingSpeed);
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+class Typer extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            text: '',
+            isDeleting: false,
+            loopNum: 0,
+            typingSpeed:150,
+          }
+        
+    }
+    
+    componentDidMount(){
+      this.handleType();
+    }
+  
+    handleType = () => {
+      const{dataText} = this.props;
+      const{text, isDeleting, loopNum, typingSpeed} = this.state;
+      const i = loopNum % dataText.length;
+      const fullText = dataText[i];
+  
+      
+      this.setState({
+        text: isDeleting ? fullText.substring(0, text.length-1):fullText.substring(0, text.length +1),
+        typingSpeed: isDeleting ? 30: 150
+      });
+  
+      //this.setState({
+      //  text: fullText.substring(0, text.length +1)
+      //});
+      if (!isDeleting && text === fullText) {     
+        setTimeout(() => this.setState({ isDeleting: true }), 500);   
+      } else if (isDeleting && text === '') {
+        this.setState({
+          isDeleting: false,
+          loopNum: loopNum + 1
+        });      
+      }
+  
+      /**
+      if(text==fullText){
+        setTimeout(() => this.setState({loopNum: loopNum+1, text:''}), 500);
+        }
+        else if (isDeleting && text === ''){
+         this.setState({
+            isDeleting: false,
+            loopNum: loopNum +1
+         }); */
+        
+        //if(loopNum != fullText.length){
+          setTimeout(this.handleType, typingSpeed);
+        //}
+    };
+  
+    render(){
+      return(<h2>
+        <span>{this.state.text}</span>
+        <span id="cursor"></span>
+        </h2>);
+    }
+  }
+
+-----------------------------------------------------------------------------------------------------
+
+import React from "react";
+import Modal from "./modal";
+class Test extends React.Component {
+  state = {
+    show: false
+  };
+  showModal = e => {
+    this.setState({
+      show: !this.state.show
+    });
+  };
+  render() {
+    return (
+      <div>
+        <button
+          class="toggle-button"
+          id="centered-toggle-button"
+          onClick={e => {
+            this.showModal(e);
+          }}
+        >
+          {" "}
+          show Modal{" "}
+        </button>
+
+        <Modal onClose={this.showModal} show={this.state.show}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+          deserunt corrupti, ut fugit magni qui quasi nisi amet repellendus non
+          fuga omnis a sed impedit explicabo accusantium nihil doloremque
+          consequuntur.
+        </Modal>
+      </div>
+    );
+  }
+}
+
+export default Test;

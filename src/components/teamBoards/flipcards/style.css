@@ -1,0 +1,35 @@
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 200px;
+    border: black solid 2px;
+    margin-bottom: 15px;
+    
+}
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+  
+  
+
+  .flip-card-front {
+    background-color: #623F96;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .flip-card-back {
+    background-color: #6ACCf4;
+    color: black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    
+  }

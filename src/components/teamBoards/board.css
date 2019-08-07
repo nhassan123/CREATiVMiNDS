@@ -1,0 +1,42 @@
+.board{
+    width: 100%x;
+    background: black;
+    color: white;
+    height: 760px;
+    border: white 2px solid;
+    margin: 10px;
+}
+
+.flipcard{
+    column-count: 5;
+    margin-top: 10px;
+}
+
+.flipcard li{
+    list-style: none;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.flipcard li:hover{
+    background: grey;
+}
+
+.flipboard{
+    column-count: 2;
+    width: 1150px;
+    margin: auto;
+}
+
+.teamItems {
+    width: 1200px;
+    height: 200px;
+    background-color: black;
+    border: white solid 10px;
+    border-radius: 15px;
+    margin: auto;
+}

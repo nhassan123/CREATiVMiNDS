@@ -1,0 +1,23 @@
+.profImg{
+    width: 35%;
+    height: 350px;
+    float: left;
+}
+
+.avatar{
+    border-radius: 50%;
+    background-color: white;
+    border: black solid 3px;
+}
+
+.mainInfo{
+    width: 65%;
+    height: 350px;
+    float: right;
+    text-align: left;
+    
+}
+
+.otherInfo{
+    text-align: right;
+}

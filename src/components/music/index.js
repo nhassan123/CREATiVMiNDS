@@ -11,10 +11,7 @@ class Music extends React.Component {
     }
     
     audio = new Audio(this.props.song)
-  
-   componentDidMount = () =>{
-     this.audio.play();
-   }
+
 
     togglePlay = () => {
       this.setState({ play: !this.state.play }, () => {

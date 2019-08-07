@@ -11,16 +11,16 @@ class SideBar extends React.Component{
             <div className="menu">
             <br/>Student Dashboard <br/>
             <a className="menu-item" href="/invitePage">
-            <AccountCircle/> &nbsp; Invites <span><b>1</b></span>
+            <AccountCircle/> &nbsp; Invites <span className="inviteMode"><b>1</b></span>
             </a>
             <a className="menu-item" href="/">
-            <Games/> Modules
+            <Games/> &nbsp; Modules
             </a>
             <a className="menu-item" href="/">
-            <Report/>Progress
+            <Report/> &nbsp; Progress
             </a>
-            <a className="menu-item" href="/">
-            <Report/> Profile
+            <a className="menu-item" href="/profile">
+            <Report/> &nbsp; Profile
             </a>
             </div>
         );

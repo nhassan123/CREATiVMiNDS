@@ -12,7 +12,7 @@ export default class Modal extends React.Component {
     }
     return (
       <div className="mofdal" id="moydal">
-        <h2>Modal Window</h2>
+        <h2>{this.props.title}</h2>
         <div className="content">{this.props.children}</div>
         <div className="actions">
           <button className="toggle-button" onClick={this.onClose}>
@@ -25,5 +25,6 @@ export default class Modal extends React.Component {
 }
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
-  show: PropTypes.bool.isRequired
+  show: PropTypes.bool.isRequired,
+  title:PropTypes.string
 };

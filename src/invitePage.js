@@ -4,7 +4,8 @@ import SideBar from './components/Sidebar/index'
 import AccountCircle from '@material-ui/icons/PersonAdd';
 import Games from '@material-ui/icons/VideogameAsset';
 import Report from '@material-ui/icons/Star';
-import GameOne from './images/game2.jpeg';
+import GameOne from './assets/towerRoom.png';
+
 
 
 class DashBoard extends React.Component{
@@ -12,11 +13,11 @@ class DashBoard extends React.Component{
     return(<div> 
         <SideBar/>
         <div className="dashboard">
-         Tess has invited you to play <b>Escape the Tower!</b>
+         <div><h2>Tess has invited you to play</h2> <h1>Escape the Tower!</h1>
          <br/> <br/>
-         <div><img src={GameOne} width="300px" /> </div>
-         <a href="/teamGame"><button> Play </button></a>
-        </div>
+         <div><img src={GameOne} width="600px" /> </div>
+         <a href="/modSelect"><button> Play </button></a>
+        </div></div>
     </div>);
     }
 }

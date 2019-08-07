@@ -1,0 +1,38 @@
+.drag-container{
+    margin:auto;
+}
+  .head {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: #CCCCCC;
+    width:100%;
+  }
+
+  .droppable {
+    width: 500px;
+    height: 300px;
+    background-color: #E91B63;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .draggable {
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+  }
+  
+  .inProgress {
+    width: 1200px;
+    height: 300px;
+    background-color: black;
+    border: white solid 10px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+#hidden{
+    display:none;
+}

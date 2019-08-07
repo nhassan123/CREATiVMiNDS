@@ -8,8 +8,8 @@ class Typer extends React.Component{
         super(props);
         this.state = {
             text: '',
-            currString: 0,
-            typingSpeed:150,
+            loopNum: 0,
+            typingSpeed:90,
           }
         
     }
@@ -20,8 +20,9 @@ class Typer extends React.Component{
   
     handleType = () => {
       const{dataText} = this.props;
-      const{text, currString, typingSpeed} = this.state;
-      const fullText = dataText[currString];
+      const{text, loopNum, typingSpeed} = this.state;
+      const i = loopNum % dataText.length;
+      const fullText = dataText[i];
   
       
       this.setState({
@@ -33,10 +34,9 @@ class Typer extends React.Component{
       //});
      
       if(text===fullText){
-        if(currString !== dataText.length){
-          this.setState({currString: currString+1,
-          text:''})
-        }
+          this.setState({loopNum: loopNum+1,
+          text:''});
+        
       }
 
       /**
@@ -49,17 +49,20 @@ class Typer extends React.Component{
             loopNum: loopNum +1
          }); */
         
-        if(text != fullText.length || currString != dataText.length-1){
+        //if(text != fullText.length || currString != dataText.length-1){
           setTimeout(this.handleType, typingSpeed);
-        }
+        //}
         
     };
   
     render(){
-      return(<div id="speech">
+      return(<div><center><div id="speech">
         <span>{this.state.text}</span>
         <span id="cursor"></span>
+        </div>
+        </center>
         </div>);
+        
     }
   }
 

@@ -1,5 +1,8 @@
 import React from 'react';
 import SideBar from './components/dashboard/dashboard'
+import Scroller from './components/scroll/index';
+import Board from './components/teamBoards/boardTwo';
+import DragDrop from './components/dragDrop/dragDrop';
 
 import styled from 'styled-components';
 
@@ -8,26 +11,16 @@ import Sprite from "./components/sprites/sprite";
 import sideAnimation from "./assets/index.png";
 import bird from "./assets/sprites/bird.png"
 
-const Container = styled.div`
-    position: relative;
-    left: 420px;
-    top:150px;
-`;
+const textSend = <div><p>Heyo wha's up errybody <br/> okay okay okyyy</p></div>
 
 export default class Player extends React.Component{
+
+    
+    
     render(){
         return(
            <div>
-            <Container>
-                <Sprite
-                   src={bird}
-                   states = {3}
-                   tile={{width: 36, height:26}}
-                   scale={1.25}
-                   framesPerStep={6}
-                   />
-                   
-            </Container>
+             <Board/>
             </div>
         );
     }

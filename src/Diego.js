@@ -8,14 +8,18 @@ import diego from "./assets/sprites/coachResize.png"
 
 const Container = styled.div`
     position: relative;
-    left: 120px;
+    left: 10px;
     top:150px;
 `;
 
 export default class Diego extends React.Component{
+    constructor(props){
+        super(props)
+    }
+     
     render(){
         return(
-            <Container>
+            <Container >
                 <Sprite
                    src={diego}
                    states = {1}

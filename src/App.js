@@ -11,6 +11,13 @@ import MiniGame from './miniGame';
 import SideBar from './Sidebar';
 import InvitePage from './invitePage';
 import Test from './test';
+import ModuleSelection from './moduleSelection';
+import Story from './storyline';
+import GameEnd from './GameEnd';
+import TeamBoard from './components/teamBoards/board';
+import Collab from './Collab';
+import BoardTwo from './components/teamBoards/boardTwo';
+import Profile from './profile';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -35,7 +42,7 @@ class App extends Component {
        
         <AppBar>
         <div className="App-header">
-          <a href="/"><img src={Logo} height="80px"></img></a> <b>CREATiV MiNDS</b>
+          <a href="/dashboard"><img src={Logo} height="80px"></img></a> <b>CREATiV MiNDS</b>
           </div>
         
         
@@ -47,7 +54,14 @@ class App extends Component {
              <Route path="/teamGame" component={TeamGame}/>
              <Route path="/hockeyGame" component={miGame}/>
              <Route path="/invitePage" component={InvitePage}/>
+             <Route path="/modSelect" component={ModuleSelection}/>
+             <Route path="/story" component={Story}/>
+             <Route path="/collab" component={TeamBoard}/>
+             <Route path="/together" component={Collab} />
+             <Route path="/togetherAgain" component={BoardTwo}/>
              <Route path="/modal" component={Test}/>
+             <Route path="/endgame" component={GameEnd} />
+             <Route path="/profile" component={Profile} />
            </Router>
            </div>  
        </div>
@@ -70,8 +84,8 @@ const dashBoard = () => {
 const LoginPage = () => {
   return(
     <div class="Login">
-        <b>USERNAME</b><br/> <input type="text"></input> <br/>
-        <b>PASSWORD</b><br/> <input type="text"></input> <br/>
+        <b>USERNAME</b><br/> <input type="text" value="DiegoS"></input> <br/>
+        <b>PASSWORD</b><br/> <input type="text" value="*******"></input> <br/>
         <a href="/dashboard"><button>LOGIN</button></a>
         
    
