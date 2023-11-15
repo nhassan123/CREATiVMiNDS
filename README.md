@@ -18,3 +18,18 @@ Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about St
 Once your application launches, you should see the page below. 
 
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_01.png)
+Clicking on the log in button will talk you to the student's profile page. 
+
+![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_02.png)
+Click on the "Invites" button on the side menu and click Play!
+![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_03.png)
+It takes you to the beginning of the module where your Coach needs your help moving a heavy brick off a bag. The text in the box is dynamic and runs on a loop. To move forward, click on the hockey stick! You can also toggle the music on or off.
+
+![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_04.png) 
+An interactive module allows students to answer questions as they play the game to help them learn new concepts, like what a simple machine is. 
+
+![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_05.png)
+You can keep clicking through the game to get to the end. 
+![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_06.png)
+
+
