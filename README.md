@@ -5,31 +5,38 @@ In this demo, we use a module called "Escape the Tower" to deliver a lesson on s
 
 Note: This is not a functional game as yet. It is a low-fidelity prototype of what such an application could look like. 
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
-
-
 # Running the App
-1. Clone the repository using git clone https://github.com/nhassan123/CREATiVMiNDS.git
-2. Navigate to the folder `cd CREATiVMINDS`
+1. Clone the repository
+ `git clone https://github.com/nhassan123/CREATiVMiNDS.git`
+2. Navigate to the folder
+ `cd CREATiVMINDS`
 3. Make sure you have the npm installed on your local computer. 
-4. Run the following command `npm start`
+4. Run the following command
+ `npm start`
 
 # Walking through the Demo!
 Once your application launches, you should see the page below. 
 
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_01.png)
-Clicking on the log in button will talk you to the student's profile page. 
+
+Clicking on the log in button will take you to the student's profile page. 
 
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_02.png)
-Click on the "Invites" button on the side menu and click Play!
+
+Click on the **Invites** button on the side menu and click **Play**!
+
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_03.png)
-It takes you to the beginning of the module where your Coach needs your help moving a heavy brick off a bag. The text in the box is dynamic and runs on a loop. To move forward, click on the hockey stick! You can also toggle the music on or off.
+
+It takes you to the beginning of the module where your Coach needs your help moving a heavy brick off a bag. The text in the box is dynamic and runs on a loop. To move forward in the module, click on the hockey stick! You can also toggle the music on or off using the **Turn on/off Sound** button.
 
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_04.png) 
+
 An interactive module allows students to answer questions as they play the game to help them learn new concepts, like what a simple machine is. 
 
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_05.png)
+
 You can keep clicking through the game to get to the end. 
+
 ![enter image description here](https://github.com/nhassan123/CREATiVMiNDS/blob/master/Images/ScreenUI_06.png)
 
 
